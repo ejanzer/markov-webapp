@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Markov Text Generator</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h1>Markov Text Generator</h1>
+        <p>This will be a Markov text generator.</p>
+        <form class="corpustext" action="" method="POST">
+            <label for="corpus">Input Text</label>
+            <textarea name="corpus" class="form-control" rows="5">{{corpus}}</textarea>
+            <label for="n_gram">N-gram Size</label>
+            <input name="n_gram" type="number" class="form-control" value={{n_gram}}>
+            <label for="wordcount">Output word count</label>
+            <input name="wordcount" type="number" class="form-control" value={{wordcount}}>
+            <input type="submit" class="btn btn-primary btn-large"></button>
+        </form>
+        <br />
+        <div id="output">
+            <label for="outputtext">Output Text</label>
+            <textarea name="outputtext" class="form-control" rows="5">{{output}}</textarea>
+        </div>
+    </div>
+</body>
+</html>

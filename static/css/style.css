@@ -1,0 +1,25 @@
+#container {
+    width: 500px;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container p {
+    text-align: center;
+}
+
+form.corpustext textarea, input {
+    margin-bottom: 10px;
+}
+
+label {
+    text-transform: uppercase;
+    color: lightgray;
+}
+
+form.corpustext input.btn-default {
+    text-align: right;
+}
