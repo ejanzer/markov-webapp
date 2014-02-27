@@ -12,9 +12,7 @@ def submit_text():
     corpus = request.form.get("corpus")
     n_gram_size = int(request.form.get("n_gram"))
     wordcount = int(request.form.get("wordcount"))
-    chains = markov.make_chains(corpus, n_gram_size)
-    starter_keys = markov.generate_starter_keys(chains)
-    output = markov.make_text(chains, starter_keys, wordcount)
+    output = markov.generate_text(corpus, n_gram_size, wordcount)
     return render_template('index.html', corpus=corpus, n_gram=n_gram_size, wordcount=wordcount, output=output)
 
 if __name__ == "__main__":
